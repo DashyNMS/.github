@@ -43,7 +43,7 @@ DashyNMS brings your [LibreNMS](https://www.librenms.org/) server to your Window
   </tr>
   <tr>
     <td width="50%" align="center">
-      <img src="https://dashynms.pckp.net/assets/img/desktop/dashboard.png" alt="DashyNMS Desktop dashboard">
+      <img src="assets/desktop-dashboard.png" alt="DashyNMS Desktop dashboard">
     </td>
     <td width="50%" align="center">
       <img src="assets/mobile-dashboard.png" alt="DashyNMS Mobile dashboard" width="220">
