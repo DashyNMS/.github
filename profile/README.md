@@ -49,6 +49,17 @@ DashyNMS brings your [LibreNMS](https://www.librenms.org/) server to your Window
       <img src="assets/mobile-dashboard.png" alt="DashyNMS Mobile dashboard" width="220">
     </td>
   </tr>
+  <tr>
+    <td colspan="2" valign="top">
+      <h3>🤖 <a href="https://github.com/DashyNMS/mcp">DashyNMS MCP</a></h3>
+      <p>Ask Claude, or any other MCP client, about your network: "what's alerting?", "how is this switch doing?", "what changed on it since yesterday?". It only reads, and it redacts secrets before anything reaches the model. Runs from a small container image.</p>
+      <p>
+        <a href="https://github.com/DashyNMS/mcp#readme"><b>Learn more</b></a> ·
+        <a href="https://github.com/DashyNMS/mcp/pkgs/container/mcp">Container image</a> ·
+        <b>Status:</b> early
+      </p>
+    </td>
+  </tr>
 </table>
 
 ## Private by design
@@ -63,10 +74,11 @@ DashyNMS brings your [LibreNMS](https://www.librenms.org/) server to your Window
 | --- | --- |
 | [**desktop**](https://github.com/DashyNMS/desktop) | The Windows app (.NET), installer and docs |
 | [**mobile**](https://github.com/DashyNMS/mobile) | The iPhone and iPad app, with widgets |
+| [**mcp**](https://github.com/DashyNMS/mcp) | The read-only MCP server for AI assistants (.NET), and its container image |
 | [**website**](https://github.com/DashyNMS/website) | Source for [dashynms.pckp.net](https://dashynms.pckp.net/) |
 
 ## Get involved
 
-Found a bug or have an idea? Open an issue on the [desktop](https://github.com/DashyNMS/desktop/issues) or [mobile](https://github.com/DashyNMS/mobile/issues) repository. Want to contribute to the desktop app? Start with the [contributing guide](https://github.com/DashyNMS/desktop/blob/master/CONTRIBUTING.md).
+Found a bug or have an idea? Open an issue on the [desktop](https://github.com/DashyNMS/desktop/issues), [mobile](https://github.com/DashyNMS/mobile/issues) or [mcp](https://github.com/DashyNMS/mcp/issues) repository. Want to contribute to the desktop app? Start with the [contributing guide](https://github.com/DashyNMS/desktop/blob/master/CONTRIBUTING.md).
 
 <sub>DashyNMS is an independent project and isn't affiliated with or endorsed by LibreNMS.</sub>
