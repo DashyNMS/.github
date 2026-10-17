@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://dashynms.pckp.net/assets/img/favicon.svg" alt="DashyNMS logo" width="88" height="88">
+  <img src="assets/logo.png" alt="DashyNMS logo" width="88" height="88">
 </p>
 
 <h1 align="center">DashyNMS</h1>
@@ -46,7 +46,7 @@ DashyNMS brings your [LibreNMS](https://www.librenms.org/) server to your Window
       <img src="https://dashynms.pckp.net/assets/img/desktop/dashboard.png" alt="DashyNMS Desktop dashboard">
     </td>
     <td width="50%" align="center">
-      <img src="https://dashynms.pckp.net/assets/img/mobile/dashboard.svg" alt="DashyNMS Mobile dashboard" height="320">
+      <img src="assets/mobile-dashboard.png" alt="DashyNMS Mobile dashboard" width="220">
     </td>
   </tr>
 </table>
