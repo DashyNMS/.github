@@ -75,10 +75,11 @@ DashyNMS brings your [LibreNMS](https://www.librenms.org/) server to your Window
 | [**desktop**](https://github.com/DashyNMS/desktop) | The Windows app (.NET), installer and docs |
 | [**mobile**](https://github.com/DashyNMS/mobile) | The iPhone and iPad app, with widgets |
 | [**mcp**](https://github.com/DashyNMS/mcp) | The read-only MCP server for AI assistants (.NET), and its container image |
+| [**core**](https://github.com/DashyNMS/core) | The shared .NET library behind all three: the LibreNMS client, alerting, graphs and more (MIT) |
 | [**website**](https://github.com/DashyNMS/website) | Source for [dashynms.pckp.net](https://dashynms.pckp.net/) |
 
 ## Get involved
 
-Found a bug or have an idea? Open an issue on the [desktop](https://github.com/DashyNMS/desktop/issues), [mobile](https://github.com/DashyNMS/mobile/issues) or [mcp](https://github.com/DashyNMS/mcp/issues) repository. Want to contribute to the desktop app? Start with the [contributing guide](https://github.com/DashyNMS/desktop/blob/master/CONTRIBUTING.md).
+Found a bug or have an idea? Open an issue on the [desktop](https://github.com/DashyNMS/desktop/issues), [mobile](https://github.com/DashyNMS/mobile/issues), [mcp](https://github.com/DashyNMS/mcp/issues) or [core](https://github.com/DashyNMS/core/issues) repository. Building it yourself? Start with the desktop [developer guide](https://github.com/DashyNMS/desktop/blob/master/docs/DEVELOPMENT.md).
 
 <sub>DashyNMS is an independent project and isn't affiliated with or endorsed by LibreNMS.</sub>
