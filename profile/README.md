@@ -75,7 +75,8 @@ DashyNMS brings your [LibreNMS](https://www.librenms.org/) server to your Window
 | [**desktop**](https://github.com/DashyNMS/desktop) | The Windows app (.NET), installer and docs |
 | [**mobile**](https://github.com/DashyNMS/mobile) | The iPhone and iPad app, with widgets |
 | [**mcp**](https://github.com/DashyNMS/mcp) | The read-only MCP server for AI assistants (.NET), and its container image |
-| [**core**](https://github.com/DashyNMS/core) | The shared .NET library behind all three: the LibreNMS client, alerting, graphs and more (MIT) |
+| [**core**](https://github.com/DashyNMS/core) | The shared .NET library behind all three: the LibreNMS client, alerting, graphs and more |
+| [**sensor-definitions**](https://github.com/DashyNMS/sensor-definitions) | The Sensor Definitions pack to allow conversion from State Value to Readable Value |
 | [**website**](https://github.com/DashyNMS/website) | Source for [dashynms.pckp.net](https://dashynms.pckp.net/) |
 
 ## Get involved
