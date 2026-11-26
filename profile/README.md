@@ -11,20 +11,20 @@
 
 <p align="center">
   <a href="https://dashynms.pckp.net/">Website</a> ·
-  <a href="https://github.com/DashyNMS/desktop/releases">Download for Windows</a> ·
+  <a href="https://github.com/DashyNMS/desktop/releases">Desktop downloads</a> ·
   <a href="https://dashynms.pckp.net/mobile/">Mobile</a> ·
   <a href="https://dashynms.pckp.net/desktop/support/">Support</a>
 </p>
 
 ---
 
-DashyNMS brings your [LibreNMS](https://www.librenms.org/) server to your Windows desktop and your phone. Sign in with an API token and it watches your network for you: what's down, what's alerting and why, without keeping a browser tab open.
+DashyNMS brings your [LibreNMS](https://www.librenms.org/) server to your desktop and your phone. Sign in with an API token and it watches your network for you: what's down, what's alerting and why, without keeping a browser tab open.
 
 <table>
   <tr>
     <td width="50%" valign="top">
       <h3>🖥️ <a href="https://github.com/DashyNMS/desktop">DashyNMS Desktop</a></h3>
-      <p>Lives in your Windows tray, polls in the background and raises a notification when something changes. A full desktop UI for devices, alerts, alert rules, health and graphs.</p>
+      <p>Version 2.0 development targets Windows, macOS and Linux, with native notifications and background monitoring. A full desktop UI for devices, alerts, alert rules, health and graphs.</p>
       <p>
         <a href="https://github.com/DashyNMS/desktop/releases"><b>Download</b></a> ·
         <a href="https://dashynms.pckp.net/desktop/">Learn more</a> ·
@@ -62,18 +62,18 @@ DashyNMS brings your [LibreNMS](https://www.librenms.org/) server to your Window
   </tr>
 </table>
 
-## Private by design
+## Privacy and connections
 
-- **Talks only to your server.** Nothing goes anywhere except your own LibreNMS instance.
-- **No account, no analytics, no tracking.** There's nothing to sign up for.
-- **Your token stays yours.** Encrypted for your Windows account on desktop, kept in the keychain on mobile.
+Connect to your own LibreNMS server. Optional Graylog, Unimus and Intelligence
+features have separate settings. Error and usage sharing is opt-in; each app's
+privacy policy explains what is shared.
 
 ## Repositories
 
 | Repository | What's in it |
 | --- | --- |
-| [**desktop**](https://github.com/DashyNMS/desktop) | The Windows app (.NET), installer and docs |
-| [**mobile**](https://github.com/DashyNMS/mobile) | The iPhone and iPad app, with widgets |
+| [**desktop**](https://github.com/DashyNMS/desktop) | The Windows, macOS and Linux app, installers and docs |
+| [**mobile**](https://github.com/DashyNMS/mobile) | The iOS and Android app, with widgets |
 | [**mcp**](https://github.com/DashyNMS/mcp) | The read-only MCP server for AI assistants (.NET), and its container image |
 | [**core**](https://github.com/DashyNMS/core) | The shared .NET library behind all three: the LibreNMS client, alerting, graphs and more |
 | [**sensor-definitions**](https://github.com/DashyNMS/sensor-definitions) | The Sensor Definitions pack to allow conversion from State Value to Readable Value |
@@ -81,6 +81,6 @@ DashyNMS brings your [LibreNMS](https://www.librenms.org/) server to your Window
 
 ## Get involved
 
-Found a bug or have an idea? Open an issue on the [desktop](https://github.com/DashyNMS/desktop/issues), [mobile](https://github.com/DashyNMS/mobile/issues), [mcp](https://github.com/DashyNMS/mcp/issues) or [core](https://github.com/DashyNMS/core/issues) repository. Building it yourself? Start with the desktop [developer guide](https://github.com/DashyNMS/desktop/blob/master/docs/DEVELOPMENT.md).
+Found a bug or have an idea? Open an issue on the [desktop](https://github.com/DashyNMS/desktop/issues), [mobile](https://github.com/DashyNMS/mobile/issues), [mcp](https://github.com/DashyNMS/mcp/issues) or [core](https://github.com/DashyNMS/core/issues) repository. Building it yourself? Start with the desktop [developer guide](https://github.com/DashyNMS/desktop/blob/main/docs/DEVELOPMENT.md).
 
 <sub>DashyNMS is an independent project and isn't affiliated with or endorsed by LibreNMS.</sub>
