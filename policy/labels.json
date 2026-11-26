@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "labels": [
+    {
+      "name": "bug",
+      "color": "d73a4a",
+      "description": "Something is not working as intended"
+    },
+    {
+      "name": "enhancement",
+      "color": "a2eeef",
+      "description": "New capability or improvement"
+    },
+    {
+      "name": "documentation",
+      "color": "0075ca",
+      "description": "Documentation changes or missing guidance"
+    },
+    {
+      "name": "dependencies",
+      "color": "0366d6",
+      "description": "Dependency versions, updates and compatibility"
+    },
+    {
+      "name": "security",
+      "color": "b60205",
+      "description": "Public security work after safe disclosure"
+    },
+    {
+      "name": "accessibility",
+      "color": "f143ab",
+      "description": "A barrier affecting people with disabilities"
+    },
+    {
+      "name": "performance",
+      "color": "fbca04",
+      "description": "Responsiveness, resource use or efficiency"
+    },
+    {
+      "name": "ci",
+      "color": "ededed",
+      "description": "Build, test and publication automation"
+    },
+    {
+      "name": "blocked-upstream",
+      "color": "b60205",
+      "description": "Waiting for an upstream change"
+    },
+    {
+      "name": "duplicate",
+      "color": "cfd3d7",
+      "description": "Already tracked in another issue or pull request"
+    },
+    {
+      "name": "invalid",
+      "color": "e4e669",
+      "description": "Outside scope or not a valid issue"
+    },
+    {
+      "name": "question",
+      "color": "d876e3",
+      "description": "A question requiring clarification"
+    },
+    {
+      "name": "wontfix",
+      "color": "ffffff",
+      "description": "Reviewed and not planned"
+    }
+  ],
+  "ecosystems": {
+    ".NET": {
+      "color": "7121c6",
+      "description": "NuGet packages and .NET dependencies"
+    },
+    "github_actions": {
+      "color": "000000",
+      "description": "GitHub Actions dependencies"
+    },
+    "docker": {
+      "color": "21ceff",
+      "description": "Container image dependencies"
+    },
+    "python": {
+      "color": "2b67c6",
+      "description": "Python package dependencies"
+    }
+  }
+}

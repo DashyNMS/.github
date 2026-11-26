@@ -1,0 +1,13 @@
+
+# Shared developer files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.venv/
+.env
+.env.*
+*.env
+__pycache__/
+*.pyc
+artifacts/
