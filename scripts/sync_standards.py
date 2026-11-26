@@ -27,24 +27,28 @@ def main():
     if dirty:
         raise SystemExit("Commit the canonical policy changes before distributing them.")
     revision = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip()
-    block = (ROOT / "policy/claude-conventions.md").read_text()
+    block = (ROOT / "policy/claude-conventions.md").read_text(encoding="utf-8")
+    prepared = []
     for root in args.repositories:
         if root.resolve() == ROOT.resolve() or not (root / ".github/repository-config.json").is_file():
             raise SystemExit(f"Not a configured consumer repository: {root}")
+        claude = root / "CLAUDE.md"
+        before, rest = claude.read_text(encoding="utf-8").split("## Repository conventions\n", 1)
+        _, after = rest.split("\n## Validation and releases", 1)
+        prepared.append((root, before, after))
+    # Validate all consumer text before copying any files.
+    for root, before, after in prepared:
         files = SHARED + [p for p in HELPERS if (root / p).exists()]
         for name in files:
             target = root / name
             target.parent.mkdir(parents=True, exist_ok=True)
             target.write_bytes((ROOT / name).read_bytes())
-        claude = root / "CLAUDE.md"
-        before, rest = claude.read_text().split("## Repository conventions\n", 1)
-        _, after = rest.split("\n## Validation and releases", 1)
-        claude.write_text(before + "## Repository conventions\n" + block + "\n## Validation and releases" + after)
+        (root / "CLAUDE.md").write_text(before + "## Repository conventions\n" + block + "\n## Validation and releases" + after, encoding="utf-8")
         lock = {"version": 1, "source": "DashyNMS/.github", "revision": revision,
                 "files": {p: digest(ROOT / p) for p in SHARED},
                 "helpers": {p: digest(ROOT / p) for p in HELPERS if (root / p).exists()},
                 "claude_sha256": hashlib.sha256(block.encode()).hexdigest()}
-        (root / ".github/repository-standards.json").write_text(json.dumps(lock, indent=2) + "\n")
+        (root / ".github/repository-standards.json").write_text(json.dumps(lock, indent=2) + "\n", encoding="utf-8")
         print(f"{root.name}: copied standards from {revision[:12]}")
 
 
