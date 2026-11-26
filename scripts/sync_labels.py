@@ -21,7 +21,7 @@ def request(token, path, method="GET", data=None):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("repositories", nargs="+", choices=["core", "desktop", "mobile", "mcp", "sensor-definitions", ".github"])
+    parser.add_argument("repositories", nargs="+", choices=["core", "desktop", "mobile", "mcp", "sensor-definitions", ".github", "website"])
     parser.add_argument("--apply", action="store_true", help="apply the displayed changes; default is a dry run")
     args = parser.parse_args()
     token = subprocess.check_output(["gh", "auth", "token"], text=True).strip()
@@ -38,7 +38,7 @@ def main():
             raise SystemExit("Label pagination exceeded its limit; no partial sync was applied.")
         indexed = {label["name"].casefold(): label for label in existing}
         wanted = manifest["labels"] + [dict(name=name, **entry) for name, entry in manifest["ecosystems"].items()
-                                       if name.casefold() in indexed or name in ({"github_actions"} | ({"python"} if repo in ("sensor-definitions", ".github", "mobile") else set()) | ({".NET"} if repo in ("core", "desktop", "mobile", "mcp") else set()) | ({"docker"} if repo == "mcp" else set()))]
+                                       if name.casefold() in indexed or name in ({"github_actions"} | ({"python"} if repo in ("sensor-definitions", ".github", "mobile", "website") else set()) | ({".NET"} if repo in ("core", "desktop", "mobile", "mcp") else set()) | ({"docker"} if repo == "mcp" else set()))]
         for label in wanted:
             old = indexed.get(label["name"].casefold())
             if old and all(old.get(key) == value for key, value in label.items()):

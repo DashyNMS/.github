@@ -6,6 +6,7 @@ Report vulnerabilities privately through the affected repository:
 - [Mobile](https://github.com/DashyNMS/mobile/security/advisories/new)
 - [MCP](https://github.com/DashyNMS/mcp/security/advisories/new)
 - [Core](https://github.com/DashyNMS/core/security/advisories/new)
+- [Website](https://github.com/DashyNMS/website/security/advisories/new)
 - [Sensor definitions](https://github.com/DashyNMS/sensor-definitions/security/advisories/new)
 
 For shared automation or community files in this repository, email
