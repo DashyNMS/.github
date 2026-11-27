@@ -2,7 +2,11 @@
 import json
 import sys
 
-STATUS_LABELS = {"blocked-upstream", "duplicate", "invalid", "wontfix"}
+STATUS_LABELS = {
+    "blocked-upstream", "duplicate", "good first issue", "help wanted", "invalid",
+    "needs-triage", "wontfix",
+}
+PLANNING_LABEL_PREFIXES = ("roadmap:", "severity:")
 
 
 def check_metadata(issue):
@@ -12,7 +16,7 @@ def check_metadata(issue):
     if not (issue.get("type") or {}).get("name"):
         errors.append("Set an organisation issue type, such as Bug, Feature or Task.")
     labels = {label["name"].casefold() for label in issue.get("labels", [])}
-    if not labels - STATUS_LABELS:
+    if not any(not label.startswith(PLANNING_LABEL_PREFIXES) for label in labels - STATUS_LABELS):
         errors.append("Add a relevant category or topic label, such as ci or dependencies.")
     if not (issue.get("milestone") or {}).get("number"):
         errors.append("Assign a release milestone, Maintenance or Unscheduled.")
