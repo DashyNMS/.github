@@ -10,7 +10,8 @@ opened. Use `type(scope): lower-case result`, with optional scopes `ci`, `deps`,
 `docs` and `security`. Types are `feat`, `fix`, `perf`, `refactor`, `docs`, `test`,
 `build`, `ci`, `chore` and `revert`. Use a breaking `!` when consumer action is
 required. Keep titles within 72 characters, without a final full stop or issue
-number. Dependabot's generated grouped summaries are the length exception.
+number. Authenticated Dependabot's generated dependency titles have a narrow exception
+for capitalisation and length.
 
 ## Release notes
 

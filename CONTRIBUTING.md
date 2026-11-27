@@ -5,7 +5,9 @@ repository and check its CONTRIBUTING.md before preparing a code change. Open
 an issue first to agree the scope; acceptance and review depend on the change
 and the repository's contribution policy.
 
-Use the bug and feature forms. Include the version, platform and steps to
+Use the bug and feature forms. Set an issue type, relevant labels and a
+milestone for each new issue. Contributors without metadata access can propose
+a milestone in the form for a maintainer to assign. See [issue categorisation](docs/REPOSITORY-STANDARDS.md#issue-categorisation). Include the version, platform and steps to
 reproduce a problem. Use synthetic data such as `example.net` and documentation
 IP addresses. Remove credentials, customer names and identifiable network details
 from text, logs and screenshots. Report vulnerabilities privately under

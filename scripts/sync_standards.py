@@ -6,7 +6,8 @@ from pathlib import Path
 import subprocess
 
 ROOT = Path(__file__).resolve().parents[1]
-SHARED = [".github/workflows/link-dependency-issue.yml", "scripts/security_filters.py", "scripts/tests/test_security_filters.py", "scripts/repository_policy.py", "scripts/security_check.py", "scripts/tests/test_repository_policy.py",
+SHARED = [".github/workflows/issue-metadata.yml", "scripts/issue_metadata.py",
+          "scripts/tests/test_issue_metadata.py", ".github/workflows/link-dependency-issue.yml", "scripts/security_filters.py", "scripts/tests/test_security_filters.py", "scripts/repository_policy.py", "scripts/security_check.py", "scripts/tests/test_repository_policy.py",
           "scripts/tests/test_security_check.py", "requirements-security.txt", "CODE_OF_CONDUCT.md",
           ".github/pull_request_template.md", ".github/ISSUE_TEMPLATE/bug_report.yml",
           ".github/ISSUE_TEMPLATE/feature_request.yml", ".github/ISSUE_TEMPLATE/config.yml", ".github/CODEOWNERS",
